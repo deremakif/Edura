@@ -5,9 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Shared\_AdminLayput.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Repository\Concrete\Adonet\" />
     <Folder Include="wwwroot\js\" />
-    <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
   <ItemGroup>

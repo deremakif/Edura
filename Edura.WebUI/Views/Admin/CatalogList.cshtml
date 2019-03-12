@@ -1,0 +1,113 @@
+﻿@model CatalogListModel
+@{
+    ViewData["Title"] = "CatalogList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Catalog</h2>
+<hr />
+<div class="card">
+    <div class="card-header">
+        Categories
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>CategoryName</th>
+                <th style="width:135px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Categories)
+            {
+                <tr>
+                    <td>@item.CategoryId</td>
+                    <td>@item.CategoryName</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+    <div class="card-footer">
+        <button class="btn btn-primary">Create</button>
+    </div>
+</div>
+<hr />
+
+<div class="card">
+    <div class="card-header">
+        Products
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>ProductName</th>
+                <th>IsApproved</th>
+                <th>IsHome</th>
+                <th>IsFeatured</th>
+                <th style="width:135px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Products)
+            {
+                <tr>
+                    <th>@item.ProductId</th>
+                    <td>
+                        <img src="~/images/products/tn/@item.Image" width="60" />
+                    </td>
+                    <td>@item.ProductName</td>
+                    <td>
+                        @if (item.IsApproved)
+                        {
+                            <span data-feather="check-square"></span>
+                        }
+                        else
+                        {
+                            <span data-feather="x-square"></span>
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsHome)
+                        {
+                            <span data-feather="check-square"></span>
+                        }
+                        else
+                        {
+                            <span data-feather="x-square"></span>
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsFeatured)
+                        {
+                            <span data-feather="check-square"></span>
+                        }
+                        else
+                        {
+                            <span data-feather="x-square"></span>
+                        }
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <div class="card-footer">
+        <button class="btn btn-primary">Create</button>
+    </div>
+
+</div>
