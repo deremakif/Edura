@@ -11,9 +11,10 @@ using System;
 namespace Edura.WebUI.Migrations
 {
     [DbContext(typeof(EduraContext))]
-    partial class EduraContextModelSnapshot : ModelSnapshot
+    [Migration("20180118072043_UpdateProductEntity")]
+    partial class UpdateProductEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -22,10 +22,11 @@ namespace Edura.WebUI.Repository.Concrete.EntityFramework
             {
                 var products = new[]
                 {
-                    new Product(){ ProductName="Photo Camera", Price=1000},
-                    new Product(){ ProductName="Webcam", Price=200},
-                    new Product(){ ProductName="Hand Bag", Price=500},
-                    new Product(){ ProductName="Sofa", Price=3000}
+                    new Product(){ ProductName="Photo Camera", Price=153, Image="product1.jpg",isHome=true,isApproved=true,isFeatured=true},
+                    new Product(){ ProductName="Wood Chair", Price=99, Image="product2.jpg",isHome=false,isApproved=true,isFeatured=true},
+                    new Product(){ ProductName="Comfortable Sofa", Price=526, Image="product3.jpg",isHome=true,isApproved=false,isFeatured=true},
+                    new Product(){ ProductName="Hand Bag", Price=125, Image="product4.jpg",isHome=true,isApproved=true,isFeatured=true},
+                    new Product(){ ProductName="Sofa", Price=250, Image="product3.jpg",isHome=true,isApproved=true,isFeatured=true}
                 };
 
                 context.Products.AddRange(products);

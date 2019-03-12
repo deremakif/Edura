@@ -1,4 +1,5 @@
 ﻿using Edura.WebUI.Entity;
+using Edura.WebUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace Edura.WebUI.Repository.Abstract
     public interface ICategoryRepository : IGenericRepository<Category>
     {
         Category GetByName(string name);
+        IEnumerable<CategoryModel> GetAllWithProductCount();
     }
 }

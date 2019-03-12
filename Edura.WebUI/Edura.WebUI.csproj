@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Repository\Concrete\Adonet\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\css\" />
