@@ -20,7 +20,7 @@ namespace Edura.WebUI.Components
         {
             return View(repository
                 .GetAll()
-                .Where(i => i.isApproved && i.isFeatured)
+                .Where(i => i.IsApproved && i.IsFeatured)
                 .ToList());
         }
     }

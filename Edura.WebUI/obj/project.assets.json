@@ -13125,11 +13125,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\kurslar\\asp.net core mvc 2\\0-Projects\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
+      "projectUniqueName": "D:\\OneDrive\\kurslar\\asp.net core mvc 2\\14-Edura\\10-Product Details\\Edura\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
       "projectName": "Edura.WebUI",
-      "projectPath": "D:\\OneDrive\\kurslar\\asp.net core mvc 2\\0-Projects\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
+      "projectPath": "D:\\OneDrive\\kurslar\\asp.net core mvc 2\\14-Edura\\10-Product Details\\Edura\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
       "packagesPath": "C:\\Users\\sadikturan\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\kurslar\\asp.net core mvc 2\\0-Projects\\Edura\\Edura.WebUI\\obj\\",
+      "outputPath": "D:\\OneDrive\\kurslar\\asp.net core mvc 2\\14-Edura\\10-Product Details\\Edura\\Edura\\Edura.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
