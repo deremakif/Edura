@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Edura.WebUI.Repository.Concrete.EntityFramework;
 using Edura.WebUI.Repository.Abstract;
+using Edura.WebUI.IdentityCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Edura.WebUI
 {
@@ -26,6 +28,11 @@ namespace Edura.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<EduraContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationIdentityDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection")));
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationIdentityDbContext>()
+                .AddDefaultTokenProviders();
+
             services.AddTransient<IProductRepository, EfProductRepository>();
             services.AddTransient<ICategoryRepository, EfCategoryRepository>();
             services.AddTransient<IUnitOfWork, EfUnitOfWork>();
@@ -46,6 +53,7 @@ namespace Edura.WebUI
             app.UseStaticFiles();
             app.UseStatusCodePages();
             app.UseSession();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
@@ -60,6 +68,7 @@ namespace Edura.WebUI
             });
 
             SeedData.EnsurePopulated(app);
+            SeedIdentity.CreateIdentityUsers(app.ApplicationServices, Configuration).Wait();
         }
     }
 }
