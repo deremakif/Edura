@@ -30,6 +30,9 @@ namespace Edura.WebUI
             services.AddTransient<ICategoryRepository, EfCategoryRepository>();
             services.AddTransient<IUnitOfWork, EfUnitOfWork>();
             services.AddMvc();
+
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +45,7 @@ namespace Edura.WebUI
 
             app.UseStaticFiles();
             app.UseStatusCodePages();
+            app.UseSession();
 
             app.UseMvc(routes =>
             {
