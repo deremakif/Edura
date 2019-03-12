@@ -10,7 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Edura.WebUI.Repository.Concrete.EntityFramework;
 using Edura.WebUI.Repository.Abstract;
-using Edura.WebUI.Repository.Concrete.Adonet;
 
 namespace Edura.WebUI
 {
@@ -27,7 +26,8 @@ namespace Edura.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<EduraContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddTransient<IProductRepository, AdoProductRepository>();
+            services.AddTransient<IProductRepository, EfProductRepository>();
+            services.AddTransient<ICategoryRepository, EfCategoryRepository>();
             services.AddMvc();
         }
 

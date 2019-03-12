@@ -8,55 +8,22 @@ using System.Linq.Expressions;
 
 namespace Edura.WebUI.Repository.Concrete.EntityFramework
 {
-    public class EfCategoryRepository : ICategoryRepository
+    public class EfCategoryRepository : EfGenericRepository<Category>, ICategoryRepository
     {
-        private EduraContext context;
-
-        public EfCategoryRepository(EduraContext ctx)
+        public EfCategoryRepository(EduraContext context) : base(context)
         {
-            context = ctx;       
         }
 
-        public void Add(Category entity)
+        public EduraContext EduraContext
         {
-            context.Categories.Add(entity);
-        }
-
-        public void Delete(Category entity)
-        {
-            context.Categories.Remove(entity);
-        }
-
-        public void Edit(Category entity)
-        {
-            context.Entry<Category>(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-        }
-
-        public IQueryable<Category> Find(Expression<Func<Category, bool>> predicate)
-        {
-            return context.Categories.Where(predicate);
-        }
-
-        public Category Get(int id)
-        {
-            return context.Categories.FirstOrDefault(i => i.CategoryId == id);
-        }
-
-        public IQueryable<Category> GetAll()
-        {
-            return context.Categories;
+            get { return context as EduraContext; }
         }
 
         public Category GetByName(string name)
         {
-            return context.Categories
+            return EduraContext.Categories
                 .Where(i => i.CategoryName == name)
                 .FirstOrDefault();
-        }
-
-        public void Save()
-        {
-            context.SaveChanges();
         }
     }
 }
