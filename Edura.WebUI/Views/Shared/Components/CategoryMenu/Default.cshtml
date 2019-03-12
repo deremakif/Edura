@@ -8,7 +8,7 @@
         {
             <li>
                 <i class="fa fa-angle-right fa-fw" aria-hidden="true"></i>
-                <a href="#">
+                <a asp-controller="Product" asp-action="List" asp-route-category="@item.CategoryName">
                     @item.CategoryName <span class="pull-right">(@item.Count)</span>
                 </a>
             </li>

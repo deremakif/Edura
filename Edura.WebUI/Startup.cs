@@ -46,8 +46,13 @@ namespace Edura.WebUI
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                     name: "products",
+                     template: "products/{category?}",
+                     defaults: new { controller = "Product", action = "List" });
+
+                routes.MapRoute(
+                       name: "default",
+                       template: "{controller=Home}/{action=Index}/{id?}");
             });
 
             SeedData.EnsurePopulated(app);

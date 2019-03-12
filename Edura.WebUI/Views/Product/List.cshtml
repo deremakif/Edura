@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Product>
+﻿@model ProductListModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -41,21 +41,21 @@
                             <div class="product-results">
                                 <div class="col-xs-8">
                                     <p class="woocommerce-result-count">
-                                        There are @Model.Count() products
+                                        There are @Model.PagingInfo.TotalItems products
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
-                    @foreach (var product in Model)
+                    @foreach (var product in Model.Products)
                     {
-                        @Html.Partial("_ProductItem", product)
-                    }
-
+                       @Html.Partial("_ProductItem", product)
+                    }    
 
                 </div>
+                
+                <div page-model="@Model.PagingInfo" page-action="List"></div>
 
             </div>
             <!-- right column end -->
