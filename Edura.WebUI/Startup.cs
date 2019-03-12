@@ -28,6 +28,7 @@ namespace Edura.WebUI
             services.AddDbContext<EduraContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IProductRepository, EfProductRepository>();
             services.AddTransient<ICategoryRepository, EfCategoryRepository>();
+            services.AddTransient<IUnitOfWork, EfUnitOfWork>();
             services.AddMvc();
         }
 
