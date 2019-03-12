@@ -1,0 +1,20 @@
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.deps.json
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.runtimeconfig.json
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.runtimeconfig.dev.json
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.dll
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.csproj.CoreCompileInputs.cache
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.AssemblyInfoInputs.cache
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.AssemblyInfo.cs
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.pdb
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.dll
+C:\Users\sadikturan\Desktop\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.pdb
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.deps.json
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.runtimeconfig.json
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.runtimeconfig.dev.json
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.dll
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\bin\Debug\netcoreapp2.0\Edura.WebUI.pdb
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.csproj.CoreCompileInputs.cache
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.AssemblyInfoInputs.cache
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.AssemblyInfo.cs
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.dll
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.pdb
