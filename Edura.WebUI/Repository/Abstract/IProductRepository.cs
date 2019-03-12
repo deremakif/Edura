@@ -7,14 +7,8 @@ using System.Threading.Tasks;
 
 namespace Edura.WebUI.Repository.Abstract
 {
-    public interface IProductRepository
+    public interface IProductRepository : IGenericRepository<Product>
     {
-        Product Get(int id);
-        IQueryable<Product> GetAll();
-        IQueryable<Product> Find(Expression<Func<Product, bool>> predicate);
-        void Add(Product entity);
-        void Delete(Product entity);
-        void Edit(Product entity);
-        void Save();
+        List<Product> GetTop5Products();
     }
 }

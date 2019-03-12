@@ -2,13 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace Edura.WebUI.Repository.Abstract
 {
-    public interface ICategoryRepository : IGenericRepository<Category>
+    public interface IOrderRepository:IGenericRepository<Order>
     {
-        Category GetByName(string name);
+
     }
 }

@@ -47,6 +47,13 @@ namespace Edura.WebUI.Repository.Concrete.EntityFramework
             return context.Categories;
         }
 
+        public Category GetByName(string name)
+        {
+            return context.Categories
+                .Where(i => i.CategoryName == name)
+                .FirstOrDefault();
+        }
+
         public void Save()
         {
             context.SaveChanges();

@@ -47,6 +47,14 @@ namespace Edura.WebUI.Repository.Concrete.EntityFramework
             return context.Products;
         }
 
+        public List<Product> GetTop5Products()
+        {
+            return context.Products
+                .OrderByDescending(i => i.ProductId)
+                .Take(5)
+                .ToList();
+        }
+
         public void Save()
         {
             context.SaveChanges();

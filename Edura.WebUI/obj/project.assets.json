@@ -13549,11 +13549,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mehmet akif\\Desktop\\ASP.NET\\Asp.Net Core 2 MVC\\Rars\\Edura-Source-Code\\4-Repository Pattern - 1\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\mehmet akif\\Desktop\\ASP.NET\\Asp.Net Core 2 MVC\\Rars\\Edura-Source-Code\\5-Repository Pattern - 2\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
       "projectName": "Edura.WebUI",
-      "projectPath": "C:\\Users\\mehmet akif\\Desktop\\ASP.NET\\Asp.Net Core 2 MVC\\Rars\\Edura-Source-Code\\4-Repository Pattern - 1\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
+      "projectPath": "C:\\Users\\mehmet akif\\Desktop\\ASP.NET\\Asp.Net Core 2 MVC\\Rars\\Edura-Source-Code\\5-Repository Pattern - 2\\Edura\\Edura.WebUI\\Edura.WebUI.csproj",
       "packagesPath": "C:\\Users\\mehmet akif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mehmet akif\\Desktop\\ASP.NET\\Asp.Net Core 2 MVC\\Rars\\Edura-Source-Code\\4-Repository Pattern - 1\\Edura\\Edura.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\mehmet akif\\Desktop\\ASP.NET\\Asp.Net Core 2 MVC\\Rars\\Edura-Source-Code\\5-Repository Pattern - 2\\Edura\\Edura.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
