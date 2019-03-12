@@ -18,3 +18,4 @@ D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\ne
 D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.AssemblyInfo.cs
 D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.dll
 D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.pdb
+D:\OneDrive\kurslar\asp.net core mvc 2\0-Projects\Edura\Edura.WebUI\obj\Debug\netcoreapp2.0\Edura.WebUI.csprojResolveAssemblyReference.cache

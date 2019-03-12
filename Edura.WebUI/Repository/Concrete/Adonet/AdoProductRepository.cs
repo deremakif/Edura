@@ -6,50 +6,43 @@ using System.Threading.Tasks;
 using Edura.WebUI.Entity;
 using System.Linq.Expressions;
 
-namespace Edura.WebUI.Repository.Concrete.EntityFramework
+namespace Edura.WebUI.Repository.Concrete.Adonet
 {
-    public class EfProductRepository : IProductRepository
+    public class AdoProductRepository : IProductRepository
     {
-        private EduraContext context;
-
-        public EfProductRepository(EduraContext ctx)
-        {
-            context = ctx;
-        }
-
         public void Add(Product entity)
         {
-            context.Products.Add(entity);
+            throw new NotImplementedException();
         }
 
         public void Delete(Product entity)
         {
-            context.Products.Remove(entity);
+            throw new NotImplementedException();
         }
 
         public void Edit(Product entity)
         {
-            context.Entry<Product>(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            throw new NotImplementedException();
         }
 
         public IQueryable<Product> Find(Expression<Func<Product, bool>> predicate)
         {
-            return context.Products.Where(predicate);
+            throw new NotImplementedException();
         }
 
         public Product Get(int id)
         {
-            return context.Products.FirstOrDefault(i => i.ProductId == id);
+            throw new NotImplementedException();
         }
 
         public IQueryable<Product> GetAll()
         {
-            return context.Products;
+            throw new NotImplementedException();
         }
 
         public void Save()
         {
-            context.SaveChanges();
+            throw new NotImplementedException();
         }
     }
 }

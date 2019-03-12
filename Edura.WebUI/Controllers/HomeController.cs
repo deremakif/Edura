@@ -18,7 +18,12 @@ namespace Edura.WebUI.Controllers
 
         public IActionResult Index()
         {
-            return View(repository.Products);
+            return View(repository.GetAll());
+        }
+
+        public IActionResult Details(int id)
+        {
+            return View(repository.Get(id));
         }
     }
 }
