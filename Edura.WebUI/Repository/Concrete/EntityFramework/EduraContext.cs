@@ -19,6 +19,8 @@ namespace Edura.WebUI.Repository.Concrete.EntityFramework
         public DbSet<Product> Products { get; set; }
         public DbSet<Image> Images { get; set; }
         public DbSet<ProductAttribute> Attributes { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderLine> OrderLines { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

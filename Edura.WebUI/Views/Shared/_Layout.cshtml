@@ -50,13 +50,8 @@
                             {
                                 <li><a href="/Account/Login"><i class="fa fa-user-o"></i> Login</a></li>
                             }
-
-
-
-         
-                         
+                            <li><a asp-controller="Cart" asp-action="Index"><i class="fa fa-shopping-cart fa-fw"></i> Cart (@await Component.InvokeAsync("CartSummary"))</a></li>
                           
-                            <li><a href="shop-cart.html"><i class="fa fa-shopping-cart fa-fw"></i> Cart (@await Component.InvokeAsync("CartSummary"))</a></li>
 
                         </ul>
 
